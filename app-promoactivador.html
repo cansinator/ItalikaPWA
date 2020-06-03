@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta charset="UTF-8" />
+    <title>App Promoactivador</title>
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="author" type="text/plain" href="css/humans.txt" />
+    <link rel="icon" type="image/png" href="img/favicon.png?v=2" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <!-- --------------------- Estilos Base --------------------- -->
+    <link rel="stylesheet" href="css/base/reset.css" />
+    <!-- --------------------- Fin Estilos Base --------------------- -->
+    <!-- --------------------- Estilos Locales --------------------- -->
+    <link rel="stylesheet" href="css/estilos_app_promo.css" />
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <!-- --------------------- Fin Estilos Locales --------------------- -->
+  </head>
+  <body>
+    <header class="esthea header">
+      <section class="contheader">
+        <div class="imagotipoitalika"></div>
+      </section>
+    </header>
+    <section class="contenido_principal">
+      <div class="contenedor">
+        <div class="contenidogeneral">
+          <section class="campsearch">
+            <input type="text" placeholder="Autoservicio, formato y/o tienda" />
+            <i class="fal fa-search"></i>
+          </section>
+          <div class="titapp">
+            <p class="txttitapp">Tiendas asignadas cercanas</p>
+          </div>
+          <section class="appmap">
+            <div id="map"></div>
+          </section>
+          <div class="infmapa">
+            <div class="detalleruta">
+              <span class="inftienda">968492 - Pedregal Antonio Grande</span>
+              <div class="iconrutas">
+                <i class="fal fa-car-alt"></i>
+                <p>550 m.</p>
+                <p>2 min.</p>
+              </div>
+            </div>
+            <div class="iconmapgo">
+              <i class="fal fa-location-circle"></i>
+            </div>
+          </div>
+          <div class="vermas">
+            <p>Ver más</p>
+            <i class="far fa-chevron-right"></i>
+          </div>
+          <div class="titapp">
+            <p class="txttitapp">Autoservicios</p>
+          </div>
+          <div>
+            <div class="carousel">
+              <a class="carousel-item" ><img src="img/autoservicios/chedraui.png"></a>
+              <a class="carousel-item" ><img src="img/autoservicios/walmart.png"></a>
+              <a class="carousel-item" ><img src="img/autoservicios/bestbuy.png"></a>
+              <a class="carousel-item" ><img src="img/autoservicios/comercial.png"></a>
+              <a class="carousel-item" ><img src="img/autoservicios/heb.png"></a>
+              <a class="carousel-item" ><img src="img/autoservicios/lacomer.png"></a>
+              <a class="carousel-item" ><img src="img/autoservicios/lamarina.png"></a>
+              <a class="carousel-item" ><img src="img/autoservicios/liverpool.png"></a>
+              <a class="carousel-item" ><img src="img/autoservicios/mueblesam.png"></a>
+              <a class="carousel-item" ><img src="img/autoservicios/ryse.png"></a>
+              <a class="carousel-item" ><img src="img/autoservicios/soriana.png"></a>
+            </div>
+          </div>
+          <div class="titapp">
+            <p class="txttitapp">Bitácora de tiendas visitadas</p>
+            <p class="fechabita">02-Jun-2020</p>
+          </div>
+          <div class="infbitacora">
+            <i class="fal fa-store"></i>
+            <p>¡No tienes registros de visitas el día de hoy!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footapp">
+      <section class="contfooter">
+        <div class="iconappfoot">
+          <i class="fas fa-home"></i>
+          <p>Inicio</p>
+        </div>
+        <div class="iconappfoot inactive">
+          <i class="fal fa-file-edit"></i>
+          <p>Registro Italika</p>
+        </div>
+        <div class="iconappfoot inactive">
+          <i class="fal fa-layer-plus"></i>
+          <p>Activados</p>
+        </div>
+        <div class="iconappfoot inactive">
+          <i class="fal fa-exclamation-square"></i>
+          <p>Problemas Tienda</p>
+        </div>
+        <div class="iconappfoot inactive">
+          <i class="fal fa-map-marker-alt"></i>
+          <p>Rutas</p>
+        </div>
+      </section>
+    </footer>
+    <!--Fin Header-->
+  </body>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ventana.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/slider.js"></script>
+  <script src="js/map.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiIn-erw01UIJdbwNQnOzzNVsAACLwiRE&callback=iniciarMap"></script>
+  <script>
+    $(document).ready(function () {
+      $('.carousel').carousel();
+    });
+  </script>
+</html>
